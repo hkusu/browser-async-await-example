@@ -1,4 +1,4 @@
-function delay(msec) {
+function sleep(msec) {
   return new Promise(resolve => {
     setTimeout(() => {
       resolve()
@@ -8,11 +8,11 @@ function delay(msec) {
 
 (async () => {
 
-  await delay(1000)
+  await sleep(1000)
 
   console.log('aaa')
 
-  await delay(2000)
+  await sleep(2000)
 
   console.log('bbb')
 
